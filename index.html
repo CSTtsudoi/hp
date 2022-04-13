@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146362677-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-146362677-1');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>TSUDOI</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="global-nav">
+            <ul class="nav-list">
+                <li><a id="nav_btn_top" href="#">TOP</a>
+                </li>
+                <li> <a id="nav_btn_about" href="#about">ABOUT</a> </li>
+                <li> <a id="nav_btn_works" href="#works">WORKS</a> </li>
+                <!-- <li> <a id="nav_btn_news" href="#">NEWS</a> </li> -->
+                <li> <a id="nav_btn_contact" href="#contact">CONTACT</a> </li>
+                <!-- <li><a id="nav_btn_member" href="./member/member.html">MEMBER</a></li> -->
+            </ul>
+        </nav>
+        <div class="hamburger" id="js-hamburger">
+            <div class="ham">
+                <span class="hamburger__line hamburger__line--1"></span>
+                <span class="hamburger__line hamburger__line--2"></span>
+                <span class="hamburger__line hamburger__line--3"></span>
+            </div>
+        </div>
+        <div class="black-bg" id="js-black-bg"></div>
+    </header>
+    <script type="text/javascript">
+        function toggleNav() {
+            var body = document.body;
+            var hamburger = document.getElementById('js-hamburger');
+            var blackBg = document.getElementById('js-black-bg');
+
+            hamburger.addEventListener('click', function() {
+                body.classList.toggle('nav-open');
+            });
+            blackBg.addEventListener('click', function() {
+                body.classList.remove('nav-open');
+            });
+        }
+        toggleNav();
+    </script>
+
+    <div id="top" class="top">
+        <h1>TSUDOI</h1>
+        <p class="typ1">College of Science and Technology</p>
+        <p class="typ2">Nihon University</p>
+    </div>
+    <div id="about" class="about">
+        <h2>ABOUT</h2>
+        <div class="about_list">
+            <img src="./img/img1.png" alt="">
+            <h3>何してる？</h3>
+            <div id="text">
+                <br>
+                <p>こんにちは、集い(ビジネス企画サークル)です。</p>
+                <p>とにかく色々な人たちと関わりたい、自分のアイデアを形にしたい、そんな人たちが集うサークルです。主な活動内容は、北習志野駅内にあるコワーキングスペース トキノマの活性化をさせるためのビジネス案を考えるのと、会社や学校が主催しているビジネスコンテストに参加することです。</p>
+            </div>
+            <p id="button"><a href=" # ">more</a></p>
+        </div>
+
+    </div>
+
+    <div id="works" class="works">
+        <h2>WORKS</h2>
+        <div class="works_list ">
+            <div class="list ">
+                <a href="https://www.keio-antre.com/ "><img src="./img/医療ベンチャー.jpeg " alt=" ">
+                    <p>慶應大学 健康医療ベンチャー大賞</p>
+                    <p>参加</p>
+                </a>
+            </div>
+            <div class="list ">
+                <a href="https://apps.apple.com/jp/app/cashme/id1489910800 "><img src="./img/cashme.png " alt=" ">
+                    <p>cashme</p>
+                    <p>リリース</p>
+                </a>
+            </div>
+            <div class="list ">
+                <img src="./img/programming.jpeg" alt=" ">
+                <p>プログラミング教室</p>
+                <p>主催</p>
+            </div>
+            <div class="list ">
+                <a href="https://apps.apple.com/tt/app/hamoni/id1522639045"><img src="./img/hamoni.png" alt=" ">
+                    <p>HAMONI</p>
+                    <p>リリース(会社として)</p>
+                </a>
+            </div>
+            <div class="list ">
+                <a href="https://tokinoma.com/"><img src="./img/tokinoma.png" alt=" ">
+                    <p>トキノマHP作成</p>
+                    <p>作成</p>
+                </a>
+            </div>
+            <div class="list ">
+                <img src="./img/tsudoi.png " alt=" ">
+                <p>集いHP作成</p>
+                <p>作成</p>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div id="contact" class="contact">
+        <h2>CONTACT</h2>
+        <p>想像をかたちにしませんか？<br> サークルの質問や大学の質問なんでもお待ちしてます。
+        </p>
+
+        <div class="iframe">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfyeqP7q9kWn-ENcwL-7hUmO-cQdlahM-Fg6uhhtHVCrxRWow/viewform?embedded=true" width="auto" height="1216" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+        </div>
+
+
+    </div>
+
+    <footer>
+        <ul>
+            <li><a href="#top">TOP</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#works">WORKS</a></li>
+            <!-- <li><a href="#news ">NEWS</a></li> -->
+            <li><a href="#contact">CONTACT</a></li>
+            <!-- <li><a href="./member/member.html">MEMBER</a></li> -->
+        </ul>
+        <div class="footer-box clearfix">
+            <h2><a href="#">TSUDOI</a></h2>
+            <div class="sns">
+                <p>
+                    <a href="https://twitter.com/TSUDOI_CST"><i class="fab fa-twitter"></i></a>
+                </p>
+                <p>
+                    <a href="https://lin.ee/CwCyOJP"><i class=" fab fa-line "></i></a>
+                </p>
+            </div>
+        </div>
+        <p class="copy">&copy; TSUDOI all rights reserved</p>
+    </footer>
+</body>
+
+</html>
